@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D9A04FCC-E262-43D7-88BA-F3C7C6BF76A4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Util.Controls</RootNamespace>
+    <AssemblyName>Util.Controls</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BakingPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BakingPage.Designer.cs">
+      <DependentUpon>BakingPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorQueryPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ErrorQueryPage.Designer.cs">
+      <DependentUpon>ErrorQueryPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StatusChange.cs" />
+    <Compile Include="StatusPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StatusPage.Designer.cs">
+      <DependentUpon>StatusPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LogPage.Designer.cs">
+      <DependentUpon>LogPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="StatusQueryPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StatusQueryPage.Designer.cs">
+      <DependentUpon>StatusQueryPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TemPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TemPage.Designer.cs">
+      <DependentUpon>TemPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TemQueryPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TemQueryPage.Designer.cs">
+      <DependentUpon>TemQueryPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VacuumPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="VacuumPage.Designer.cs">
+      <DependentUpon>VacuumPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TimePage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TimePage.Designer.cs">
+      <DependentUpon>TimePage.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BakingPage.resx">
+      <DependentUpon>BakingPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ErrorQueryPage.resx">
+      <DependentUpon>ErrorQueryPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StatusPage.resx">
+      <DependentUpon>StatusPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogPage.resx">
+      <DependentUpon>LogPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StatusQueryPage.resx">
+      <DependentUpon>StatusQueryPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TemPage.resx">
+      <DependentUpon>TemPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TemQueryPage.resx">
+      <DependentUpon>TemQueryPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VacuumPage.resx">
+      <DependentUpon>VacuumPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimePage.resx">
+      <DependentUpon>TimePage.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Main.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\Main.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\mainPage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\greenlight.png" />
+    <Resource Include="image\redlight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\application.BLL\application.BLL.csproj">
+      <Project>{f054a01c-bbbb-4f02-9014-8bf07824dfb4}</Project>
+      <Name>application.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\application.Common\application.Common.csproj">
+      <Project>{f0e9bce6-3881-4285-b417-f740676f509f}</Project>
+      <Name>application.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\application.DAL\application.DAL.csproj">
+      <Project>{229cd473-395a-4ed6-a091-bff639dfe534}</Project>
+      <Name>application.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\application.Model\application.Model.csproj">
+      <Project>{5fab3bce-e165-4af0-b3e0-8950b7d8051a}</Project>
+      <Name>application.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\application.MX\application.MX.csproj">
+      <Project>{62d5bf36-798e-4d58-af50-7fd34a3041a0}</Project>
+      <Name>application.MX</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\greenlight.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
